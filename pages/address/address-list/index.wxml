@@ -1,0 +1,30 @@
+<!--pages/address/address-list/index.wxml-->
+<view class='container'>
+  <view class="weui-msg" hidden="{{addressList.length != 0}}">
+    <view class="weui-msg__icon-area">
+      <icon type="info" size="93"></icon>
+    </view>
+    <view class="weui-msg__text-area">
+      <view class="weui-msg__title">暂无收货地址</view>
+    </view>
+  </view>
+
+  <view class="weui-cells weui-cells_after-title" hidden="{{addressList.length == 0}}">
+    <radio-group>
+      <label class="weui-cell weui-check__label" wx:for="{{addressList}}" wx:key="value" data-index="{{index}}" data-id="{{item.id}}" bindtap='tabAddress'>
+        <radio class="weui-check" value="{{item.value}}" checked="{{item.dft}}" />
+        <view class='weui-cell__bd'>
+          <view class="weui-media-box__title weui-media-box__title_in-text">{{item.contacts}}</view>
+          <view class="weui-media-box__desc">{{item.address}}</view>
+        </view>
+
+        <view class="weui-cell__ft weui-cell__ft_in-radio" wx:if="{{item.dft}}">
+          <icon class="weui-icon-radio" type="success_no_circle" size="16"></icon>
+        </view>
+      </label>
+    </radio-group>
+  </view>
+  <view class="weui-btn-area">
+    <button class="weui-btn" type="primary" bindtap="tabAddressAdd">新增收货地址</button>
+  </view>
+</view>

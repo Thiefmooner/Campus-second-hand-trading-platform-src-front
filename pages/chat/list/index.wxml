@@ -1,0 +1,8 @@
+<view class="no-message" hidden='{{messageList.length == 0? false:true}}'>
+  ~未查询到消息~
+</view>
+
+<view class="weui-flex list" wx:for-item="message" wx:key="id" wx:for-index="idx" wx:for="{{messageList}}" data-id='{{message.id}}' bindtap='detail' data-adminid="{{message.adminId}}" data-sessionid="{{message.sessionId}}" data-userid="{{message.user.id}}">
+  <image class="avatar" src="{{message.user.avatarUrl}}"></image>
+  <view>{{message.user.loginName}}</view>
+</view>

@@ -1,0 +1,30 @@
+<view class='container'>
+<scroll-view style='height:{{messageHeight}}px;' scroll-y="true">
+  <block wx:key="id" wx:for-index="idx" wx:for="{{messageList}}">
+    <view wx:if="{{item.type == 1}}" class="admin">
+      <image class="avatar" src='{{item.user.avatarUrl}}'></image>
+      <view class="login-name">{{item.user.loginName}}</view>
+      <view class='admin-content'>{{item.content}}</view>
+    </view>
+    <view wx:if="{{item.type == 2}}" class='user'>
+      <view class="user-info">
+      <image class="avatar" src='{{item.user.avatarUrl}}'></image>
+      </view>
+      <view class="login-name">{{item.user.loginName}}</view>
+      <view class="user-content" wx:if="{{item.msgType == 1}}">{{item.content}}</view>
+      <view class="user-content" wx:if="{{item.msgType == 2}}">
+        <image class="img" mode="widthFix" src='{{item.content}}'></image>
+      </view>
+    </view>
+  </block>
+</scroll-view>
+<view class='bottom'>
+<form bindsubmit='sendMessage' bindreset='resetForm'>
+  <view style='display:flex; align-items:center'>
+  <textarea name="content" placeholder='请输入留言' value='{{content}}' style="width: auto; flex: 1"></textarea>
+  <button type='warn' size="mini" form-type='submit'>发送</button>
+  <button type='primary' size="mini" bindtap='chooseImage' hidden="true">图片</button>
+  </view>
+</form>
+</view>
+</view>

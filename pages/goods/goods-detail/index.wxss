@@ -1,0 +1,169 @@
+/* pages/goods/goods-detail/index.wxss */
+
+.container {
+  padding-bottom: 100rpx;
+}
+
+swiper {
+  height: 750rpx;
+}
+
+.slide-image {
+  width: 750rpx;
+  height: 750rpx;
+}
+
+.wxParse-p {
+  overflow: hidden
+}
+
+.btn-phone {
+  width: 100%;
+  border-radius: 0;
+}
+
+.footer-box {
+  width: 100%;
+  height: 100rpx;
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  box-shadow: 0 0 8rpx 0;
+}
+
+.footer-box .shop-cart-btn {
+  position: relative;
+  width: 125rpx;
+  height: 100%;
+  line-height: 100rpx;
+  text-align: center;
+  padding-top: 26rpx;
+  font-size: 20rpx;
+  color: #acacb7;
+  box-sizing: border-box;
+  background: url("https://app.wfuhui.com/images/cart.png") no-repeat center 21rpx;
+  background-size: 44rpx auto;
+}
+
+.footer-box .shop-cart-btn .shop-num {
+  position: absolute;
+  color: #e64340;
+  left: 90rpx;
+  top: -20rpx;
+}
+
+.footer-box .join-shop-cart {
+  text-align: center;
+  flex: 1;
+  height: 100%;
+  line-height: 100rpx;
+  background-color: #ef8203;
+  color: #fff;
+  font-size: 34rpx;
+}
+
+.footer-box .now-buy {
+  text-align: center;
+  height: 100rpx;
+  flex: 1;
+  line-height: 100rpx;
+  background-color: #00bfe0;
+  color: #fff;
+  font-size: 34rpx;
+}
+
+.footer-box .now-appoint {
+  text-align: center;
+  height: 100%;
+  width: 50%;
+  line-height: 100rpx;
+  background-color: #e64340;
+  color: #fff;
+  font-size: 34rpx;
+  border: none;
+  border-radius: 0px;
+}
+
+button[class="now-appoint"]::after {
+  border: 0;
+}
+
+.footer-box .telphone {
+  text-align: center;
+  height: 100%;
+  width: 50%;
+  line-height: 100rpx;
+  background-color: #1aad19;
+  color: #fff;
+  font-size: 34rpx;
+}
+
+.goods-info {
+  background-color: #fff;
+  padding: 30rpx;
+  margin-bottom: 15rpx;
+}
+
+.goods-info .price {
+  font-size: 28rpx;
+  color: #ef8203
+}
+
+.goods-info .title {
+  font-size: 32rpx;
+  font-weight: bold;
+  margin-bottom: 20rpx;
+}
+
+.nickname {
+  font-size: 28rpx;
+  margin-left: 6rpx;
+}
+
+.footer-box .shop-msg-btn {
+  width: 125rpx;
+  height: 100%;
+  text-align: center;
+  border-right: 1rpx solid #eee
+}
+
+.shop-msg-btn image {
+  width: 70rpx;
+  height: 70rpx;
+  margin-top: 15rpx;
+}
+
+.phone {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.create-time {
+  font-size: 26rpx;
+  color: #999;
+}
+
+.nick-name {
+  font-size: 28rpx;
+}
+
+.user-info {
+  align-items: center;
+
+}
+
+.user-info image {
+  margin-right: 8rpx;
+}
+
+.list-item {
+  margin-bottom: 10rpx;
+  border-bottom: 1rpx solid #ddd;
+}
+
+.collection image{
+  width: 70rpx;
+  height: 70rpx;
+}

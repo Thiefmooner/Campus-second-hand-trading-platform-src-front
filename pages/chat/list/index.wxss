@@ -1,0 +1,25 @@
+/* pages/message-list/index.wxss */
+page{
+  background: #f7f7f7
+}
+
+.list{
+  border-bottom: 1px solid #eee;
+  padding: 25rpx;
+  background: url("https://offer.hrsalon.com/images/arrow-right.png") no-repeat 705rpx center;
+  background-color: white;
+  background-size: 16rpx auto;
+}
+
+.no-message{
+  text-align: center;
+  margin-top: 15rpx;
+  font-size: 32rpx;
+  color: darkgray
+}
+
+.avatar{
+  width: 60rpx;
+  height: 60rpx;
+  margin-right: 20rpx
+}

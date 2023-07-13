@@ -1,0 +1,27 @@
+/* pages/shop/logistics/index.wxss */
+.info{
+  background: #fff;
+  border-bottom: 1rpx solid #eee;
+  padding: 20rpx;
+  font-size: 32rpx;
+}
+
+.detail{
+  background: #fff;
+  padding: 20rpx;
+  font-size: 28rpx;
+  color: #888;
+}
+
+.detail .item{
+  margin-bottom: 30rpx;
+  align-items: center;
+}
+
+.detail .dot{
+  background: orangered;
+  width: 30rpx;
+  height: 30rpx;
+  border-radius: 30rpx;
+  margin-right: 20rpx;
+}

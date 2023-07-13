@@ -1,0 +1,18 @@
+<!--pages/shop/logistics/index.wxml-->
+<view class="container">
+  <view class="info">
+    <view>物流公司：{{logisticsName}}</view>
+    <view>物流单号：{{logisticsNum}}</view>
+  </view>
+
+  <view class="detail">
+    <view class="weui-flex item" wx:for="{{logistics}}" wx:key="*this">
+      <view class="dot"></view>
+
+      <view class="weui-flex__item">
+        <view>{{item.AcceptStation}}</view>
+        <view>{{item.AcceptTime}}</view>
+      </view>
+    </view>
+  </view>
+</view>

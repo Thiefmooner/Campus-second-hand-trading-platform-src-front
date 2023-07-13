@@ -1,0 +1,40 @@
+<view class='container'>
+  <view hidden='{{goodsList.length != 0}}' class='goods-no'>
+    <image src='/images/icon-cart.png'></image>
+    <view class="label">
+      购物车空空如也～
+    </view>
+    <button plain='true' size='mini' bindtap='goShop'>去逛逛</button>
+  </view>
+
+  <view hidden='{{goodsList.length == 0}}'>
+    <view class="title">
+      <label>我的购物车</label>
+    </view>
+    <checkbox-group bindchange="checkboxChange">
+    <view class="weui-flex goods-list" wx:for="{{goodsList}}" wx:key="{{index}}">
+      <checkbox value='{{item.id}}'></checkbox>
+      <image class='goods-img' src='{{item.picUrl}}'></image>
+      <view class='weui-flex__item goods-name'>
+        <view>{{item.goodsName}}</view>
+        <view class="price">{{item.price}}</view>
+        <view>x{{item.num}}</view>
+      </view>
+      <image data-index='{{index}}' class='icon' src='/images/remove.png' bindtap='remove'></image>
+    </view>
+    </checkbox-group>
+    <view class="weui-footer weui-footer_fixed-bottom">
+      <view class='weui-flex'>
+        <view class='weui-flex__item'>
+          
+        </view>
+        <view class='weui-flex'>
+          <view class='borrow-num'>合计{{totalAmount}}</view>
+
+          <button class='borrow' size='mini' bindtap='buy'>去购买</button>
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>
